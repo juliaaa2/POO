@@ -34,5 +34,14 @@ System.out.println("------Cambio de nombre del empleado Asalariado 1 y 4----");
 	for(int i=0; i<empleadosA.length;i++) {
 		System.out.println("Empleado Asalariado "+(i+1)+":"+empleadosA[i].getNombre()+" salario: "+empleadosA[i].getSalarioB());
 	}	
-	}
+	}   
+    String nombreBuscado = "Juan";
+    EmpleadoAsalariado empleadoBuscado = buscarEmpleadoAsalariadoPorNombre(empleadosA, nombreBuscado);
+    if (empleadoBuscado != null) {
+        System.out.println("Empleado Asalariado encontrado: " + empleadoBuscado.getNombre() + " salario: " + empleadoBuscado.getSalarioB());
+    } else {
+        System.out.println("Empleado Asalariado con nombre " + nombreBuscado + " no encontrado.");
+    }
+
+
 }

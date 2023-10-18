@@ -25,5 +25,17 @@ public class EmpleadoAsalariado extends Empleado {
 		salarioB-=deducciones;
 		return salarioB;
 	}
+public EmpleadoAsalariado buscarEmpleadoAsalariadoPorNombre(EmpleadoAsalariado[] empleados, String nombre) {
+    for (EmpleadoAsalariado empleado : empleados) {
+        if (empleado.getNombre().equals(nombre)) {
+            return empleado;
+        }
+    }
+    return null; // Devuelve null si el empleado no se encuentra
+}
+
+
+
+
 	}
 	
